@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: "{{ .Values.username }}-pv4"
+  name: "{{ .Values.username }}-pv5"
   labels:
     app: "getstartedjava-{{ .Values.username }}"
 spec:
@@ -17,7 +17,7 @@ spec:
 kind: PersistentVolumeClaim
 apiVersion: v1
 metadata:
-  name: "cloudant-pvc4-{{ .Values.username }}"
+  name: "cloudant-pvc5-{{ .Values.username }}"
 spec:
   accessModes:
     - ReadWriteOnce
@@ -78,9 +78,9 @@ spec:
         ports:
           - containerPort: 80
         volumeMounts:
-        - name: "{{ .Values.username }}-pv4"
+        - name: "{{ .Values.username }}-pv5"
           mountPath: /srv
       volumes:
-        - name: "{{ .Values.username }}-pv4"
+        - name: "{{ .Values.username }}-pv5"
           persistentVolumeClaim:
-            claimName: "cloudant-pvc3-{{ .Values.username }}"
+            claimName: "cloudant-pvc5-{{ .Values.username }}"
