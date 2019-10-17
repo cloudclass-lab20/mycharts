@@ -3,11 +3,11 @@ entries:
   eventapp-lab20:
   - apiVersion: v1
     appVersion: "1.0"
-    created: "2019-10-17T16:44:05.915984+09:00"
+    created: "2019-10-17T17:30:00.6884319+09:00"
     description: A Helm chart for Kubernetes
-    digest: 765bbc7f7f762d0fdb18fbaa878b35e9864f872dc0ce86f89d08fac8c7bba8a4
+    digest: 73bf8356a7a0890abf7474080fa1392905a56cdd30426a33683494c86a019256
     name: eventapp-lab20
     urls:
     - https://cloudclass-lab20.github.io/mycharts/eventapp-lab20-0.1.0.tgz
     version: 0.1.0
-generated: "2019-10-17T16:44:05.9149468+09:00"
+generated: "2019-10-17T17:30:00.6874319+09:00"
