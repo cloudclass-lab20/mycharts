@@ -1,7 +1,7 @@
 kind: PersistentVolume
 apiVersion: v1
 metadata:
-  name: "{{ .Values.username }}-pv"
+  name: "{{ .Values.username }}-pv2"
   labels:
     app: "getstartedjava-{{ .Values.username }}"
 spec:
@@ -78,9 +78,9 @@ spec:
         ports:
           - containerPort: 80
         volumeMounts:
-        - name: "{{ .Values.username }}-pv"
+        - name: "{{ .Values.username }}-pv2"
           mountPath: /srv
       volumes:
-        - name: "{{ .Values.username }}-pv"
+        - name: "{{ .Values.username }}-pv2"
           persistentVolumeClaim:
             claimName: "cloudant-pvc-{{ .Values.username }}"
